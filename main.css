@@ -44,8 +44,8 @@ img {
 }
 
 input {
-  padding:1px;
-  bordeer: 0;
+  padding: 10px;
+  border: 0;
 }
 
 section, footer {
@@ -71,7 +71,7 @@ section, footer {
  flex: 3;
 }
 .flex-nav .social {
-  flex:1;
+  flex: 1;
 }
 
 /* moble size */
@@ -98,14 +98,14 @@ section, footer {
     flex-basis: 100%; /* this will make the items into columns on 500px screen size */
   }
   
-/*   use the div.wrapper to make the content in too flex items */
+/*   use the div.wrapper aka perant to make the content aka childeren in to flex items */
   .wrapper {
     display: flex;
     flex-direction: column;
   }
   
-/*   sit an initshal order on to the flex items, si the nav can stay on top when set to "oder:1;" */
-  .wapper > * {
+/*   sit an initshal order on to the flex items, so the nav can stay on top when set to "oder:1;" */
+  .wrapper > * {
     order: 9999;
   }
   
@@ -118,15 +118,15 @@ section, footer {
     display: block;
   }
 /*   hide the item on the navbar */
-  .flext-nav ul {
+  .flex-nav ul {
     display: none;
   }
   
 /*   hleps with the menu drop */
-  .flext-nav ul.open {
+  .flex-nav ul.open {
     display: flex;
   }
-  
+  /* putting these items in order: ; */
   .top {
     order: 2; 
   }
@@ -135,8 +135,7 @@ section, footer {
     order: 3; 
   }
   
-  
   .signup{
-    order:4;
+    order: 4;
   }
 }
